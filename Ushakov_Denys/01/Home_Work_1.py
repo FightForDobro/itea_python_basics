@@ -1,4 +1,4 @@
-# Simple Black Jack v - Alpha 0.2
+# Simple Black Jack v - Beta 1.0
 from random import randint as ri
 from random import choice
 import time
@@ -917,7 +917,7 @@ while True:
                         exit('Game Over :(')
 
             elif dealer_score > 21:
-                print('Print dealer have more then 21')
+                print('Dealer have more then 21')
 
                 if player_score == bots:
 
@@ -938,8 +938,8 @@ while True:
 
                     if player_score == second_bot_score:
 
-                        print('Score are equal')
-                        print('DRAW')
+                        print(f'Score are equal to {random_girl_bot_name}')
+                        print(f'DRAW with {random_girl_bot_name}')
 
                         # Return to main menu
                         print('If you want play again?\nEnter PA or press enter to exit')
@@ -953,8 +953,8 @@ while True:
 
                     elif player_score == first_bot_score:
 
-                        print('Score are equal')
-                        print('DRAW')
+                        print(f'Score are equal {random_boy_bot_name}')
+                        print(f'DRAW with {random_boy_bot_name}')
 
                         # Return to main menu
                         print('If you want play again?\nEnter PA or press enter to exit')
@@ -965,6 +965,22 @@ while True:
 
                         else:
                             exit('Game Over :(')
+
+                    elif first_bot_score > player_score or second_bot_score > player_score:
+
+                        print('You have less score then some bot')
+                        print('You lose')
+
+                        # Return to main menu
+                        print('If you want play again?\nEnter PA or press enter to exit')
+                        play_again_option = input('Enter here ───> ')
+
+                        if play_again_option.lower() == 'pa':
+                            continue
+
+                        else:
+                            exit('Game Over :(')
+
 
                     else:
 

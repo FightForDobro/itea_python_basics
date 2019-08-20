@@ -17,7 +17,9 @@ print('Hello player, please enter your name: ')
 user_name = input('Please enter your Name: ')
 
 print(user_name, 'do you waned to pick a card? ')  # player pick a card
+
 print('yes or no')
+
 while True:
     answer = input()
     if answer in ('y', 'yes'):

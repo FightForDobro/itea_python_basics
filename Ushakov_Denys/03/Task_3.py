@@ -1,9 +1,12 @@
-def custom_map(f_list, s_func):  # добавить масив сюда в которйо будет записывать резулятат выполения
+def custom_map(s_func, f_list):  # добавить масив сюда в которйо будет записывать резулятат выполения
     """
     Simple map function split list on single elements and add it to some function
     :param f_list: Some list
     :param s_func: Some function
+    :type f_list: list
+    :type s_func: func
     :return: return result
+    :rtype: list
     """
     result = []
 
@@ -18,13 +21,19 @@ def power_of_two(num, power=2):
     Function power of 2 number
     :param num: Some number
     :param power: Power
+    :type num: int
+    :type power: int
     :return: num in power
+    :rtype: int
     """
 
-    return num * power
+    return num ** power
 
 
-result = custom_map([1, 2, 3, 9], power_of_two)  # Использовать lambda чтобы менять повер
+result = custom_map(power_of_two, [1, 2, 3, 9])  # Использовать lambda чтобы менять повер
 
-print(result)
+result_lambda = custom_map(lambda x: x ** 2, [1, 2, 3, 9])
+
+print(f'Result using func: {result}\n')
+print(f'Result using lambda: {result_lambda}')
 

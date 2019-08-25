@@ -25,7 +25,7 @@ def find_unique_words(words, s_dict):
     keywords_list = []
 
     a = s_dict
-    
+
     for word in set(words):
 
         if s_dict[word] == 1:

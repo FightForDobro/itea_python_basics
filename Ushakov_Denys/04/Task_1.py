@@ -45,7 +45,6 @@ def help_print_all_unique_word(words):
     """
 
     words_list = []
-    word_string = ''
 
     counter = 1
     for word in words:
@@ -59,7 +58,7 @@ def help_print_all_unique_word(words):
 
             words_list.append(f'{word}')
 
-    return word_string.join(words_list)
+    return ''.join(words_list)
 
 
 def find_frequent_words(s_dict):
@@ -84,7 +83,6 @@ def help_print_keyword(s_tuple):  # im created this fucn to print more then 3 ke
     """
 
     keyword_list = []
-    keyword_string = ''
     counter = 0
     f_elem_counter = 0
 
@@ -95,7 +93,7 @@ def help_print_keyword(s_tuple):  # im created this fucn to print more then 3 ke
 
         f_elem_counter += 1
         counter += 1
-    return keyword_string.join(keyword_list)
+    return ''.join(keyword_list)
 
 
 def adopt_word_in_dict(text):
@@ -133,7 +131,6 @@ def calculate_frequency_of_all_world(s_dict):
     """
 
     freq_list = []
-    freq_text = ''
 
     # Calculate freq for each word
     for key, value in s_dict.items():
@@ -146,7 +143,7 @@ def calculate_frequency_of_all_world(s_dict):
         freq_list.append(f'{key} = ')
         freq_list.append(f'{str(value)}% ')
 
-    return freq_text.join(freq_list)
+    return ''.join(freq_list)
 
 
 def adapts_text_to_correct_format(text):

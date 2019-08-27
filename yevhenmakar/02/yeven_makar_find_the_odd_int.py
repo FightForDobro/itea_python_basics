@@ -4,8 +4,6 @@ counter = 0
 
 for i in random_list:
 
-    counter = 0
-
     for j in random_list:
 
         if i == j:

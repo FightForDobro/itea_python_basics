@@ -9,7 +9,7 @@ summ = card_1 + card_2
 
 cards_left = 8
 
-while True and cards_left != 0: #number of attemps / or number of cards
+while cards_left != 0: #number of attemps / or number of cards
     
     if card_1 == card_2 == 11 :
         print('You have a jackpot!!!')
@@ -66,7 +66,7 @@ print('The Players_1 first SUM is', summ_1) #check for sum
 
 picker = 1
 
-while True and cards_left_1 != 0 and picker == 1:
+while cards_left_1 != 0 and picker == 1:
 
     picker = randint(0,1)
     print('The player pick ', picker, 'cards.') #check for pick
@@ -98,6 +98,8 @@ print('The Players_1 total SUM is ', summ_1) #check for exit sum
 
 print('Turn is switched to the next player -> \n')
 
+
+
 '''
     # The solvetion for 2 players
    
@@ -114,6 +116,8 @@ print('Game over')
 
 '''
 
+
+
 #----------------------------------
 # Player_2 or Croupier
 #----------------------------------
@@ -128,7 +132,7 @@ print('The Players_2 first SUM is', summ_2) #check for sum
 
 picker_2 = 1
 
-while True and cards_left_2 != 0 and picker_2 == 1:
+while cards_left_2 != 0 and picker_2 == 1:
 
     picker_2 = randint(0,1)
     
@@ -165,12 +169,12 @@ print('The Players_2 total SUM is ', summ_2, '\n') #check for exit sum
 #----------------------------------
 
 
-if summ == summ_1 == summ_2 and summ <= 21:
+
+if summ == summ_1 == summ_2 <= 21:
     print('It is a miracle! Everybody won!')
 
 
-
-if summ and summ_1 and summ_2 <=21:
+if summ <=21 and summ_1 <=21 and summ_2 <=21:
 
     if summ > summ_1 and summ > summ_2:
         print('You win the game!')
@@ -181,6 +185,15 @@ if summ and summ_1 and summ_2 <=21:
     elif summ_2 > summ and summ_2 > summ_1:
         print('Player_2 win the game!')
 
+    elif summ_2 == summ_1 and summ_2 > summ:
+        print('Player_1 and Player_2 are equal, but You lose(')
+    
+    elif summ_2 == summ and summ_2 > summ_1:
+        print('You and Player_2 are equal, but Player_1 lose')
+        
+    elif summ_1 == summ and summ_1 > summ_2:
+        print('You and Player_1 are equal, but Player_1 lose')
+
 
 
 # if summ or summ_1 or summ_2 > 21:
@@ -189,58 +202,46 @@ if summ > 21 or summ_1 > 21 or summ_2 > 21:
     
     if summ > 21 :
         
-        if (summ and summ_1 > 21) and summ_2 <= 21:
+        if (summ > 21 and summ_1 > 21) and summ_2 <= 21:
             print('Player_2 win the game!')
 
-        elif summ_1 > summ_2 and (summ_1 and summ_2 <= 21):
+        elif summ_1 > summ_2 and (summ_1 <= 21 and summ_2 <= 21):
             print('Player_1 win the game!')
             
-        elif summ_2 > summ_1 and (summ_1 and summ_2 <= 21):
+        elif summ_2 > summ_1 and (summ_1 <= 21 and summ_2 <= 21):
             print('Player_2 win the game!')
 
-        elif summ_2 == summ_1 and (summ_1 and summ_2 <= 21):
+        elif summ_2 == summ_1 and (summ_1 <= 21 and summ_2 <= 21):
             print('Player_1 and Player_2 are equal')
 
     if summ_1 > 21 :
 
-        if (summ_1 and summ_2 > 21) and summ <= 21:
+        if (summ_1 > 21 and summ_2 > 21) and summ <= 21:
             print('You win the game!')
 
-        elif summ > summ_2 and (summ and summ_2 <= 21):
+        elif summ > summ_2 and (summ <= 21 and summ_2 <= 21):
             print('You win the game!')
             
-        elif summ_2 > summ and (summ and summ_2 <= 21):
+        elif summ_2 > summ and (summ <= 21 and summ_2 <= 21):
             print('Player_2 win the game!')
             
-        elif summ_2 == summ and (summ and summ_2 <= 21):
+        elif summ_2 == summ and (summ <= 21 and summ_2 <= 21):
             print('You and Player_2 are equal')
 
     if summ_2 > 21 :
         
-        if (summ and summ_2 > 21) and summ_1 <= 21:
+        if (summ > 21 and summ_2 > 21) and summ_1 <= 21:
             print('Player_1 win the game!')
             
-        elif summ > summ_1 and (summ and summ_1 <= 21):
+        elif summ > summ_1 and (summ <= 21 and summ_1 <= 21):
             print('You win the game!')
             
-        elif summ_1 > summ and (summ and summ_1 <= 21):
+        elif summ_1 > summ and (summ <= 21 and summ_1 <= 21):
             print('Player_1 win the game!')
                     
-        elif summ_1 == summ and (summ and summ_1 <= 21):
+        elif summ_1 == summ and (summ <= 21 and summ_1 <= 21):
             print('You and Player_1 are equal')
 
-
-
-if (summ or summ_1 or summ_2) == (summ or summ_1 or summ_2) and (summ and summ_1 and summ_2 <= 21): 
-
-    if summ == summ_1:
-        print('Player_2 win the game!')
-        
-    elif summ_1 == summ_2:
-        print('You win the game!')
-        
-    elif summ == summ_2:
-        print('Player_1 win the game!')
 
 
 print('\n-----------\n Game over \n-----------\n')

@@ -3,7 +3,7 @@ def custom_filter(s_func, f_list):
     Simple filter function filters collection by another function
     :param f_list: Some list
     :param s_func: Some function
-    :type f_list: iterable
+    :type f_list: iterable collection
     :type s_func: func
     :return: return result of function
     :rtype: list

@@ -17,40 +17,42 @@ print('Hello player, please enter your name: ')
 user_name = input('Please enter your Name: ')
 
 print(user_name, 'do you waned to pick a card? ')  # player pick a card
+
 print('yes or no')
+
 while True:
     answer = input()
     if answer in ('y', 'yes'):
-        a = first_card
+        first_card_score = first_card
         break
 
     elif answer in ('n', 'no'):
-        a = 0
+        first_card_score = 0
         break
 
 while True:
     first_bot_choice1 = randint(0, 1)  # first bot random pick a card
     if first_bot_choice1 == 1:
-        a1 = first_bot_card1
+        first_bot_card1_score = first_bot_card1
         break
 
     elif first_bot_choice1 == 0:
-        a1 = 0
+        first_bot_card1_score = 0
         break
 
 while True:
     second_bot_choice1 = randint(0, 1)  # second bot random pick a card
     if second_bot_choice1 == 1:
-        a2 = second_bot_card1
+        second_bot_card1_score = second_bot_card1
         break
 
     elif second_bot_choice1 == 0:
-        a2 = 0
+        second_bot_card1_score = 0
         break
 
-user_score = a  # score all players
-first_bot_score = a1
-second_bot_score = a2
+user_score = first_card_score  # score all players
+first_bot_score = first_bot_card1_score
+second_bot_score = second_bot_card1_score
 
 print('your score is', user_score)
 
@@ -59,36 +61,36 @@ print('yes or no')
 while True:
     answer = input()
     if answer in ('y', 'yes'):
-        b = second_card
+        second_card_score = second_card
         break
 
     elif answer in ('n', 'no'):
-        b = 0
+        second_card_score = 0
         break
 
 while True:
     first_bot_choice2 = randint(0, 1)
     if first_bot_choice2 == 1:
-        b1 = first_bot_card2
+        first_bot_card2_score = first_bot_card2
         break
 
     elif first_bot_choice2 == 0:
-        b1 = 0
+        first_bot_card2_score = 0
         break
 
 while True:
     second_bot_choice2 = randint(0, 1)
     if second_bot_choice2 == 1:
-        b2 = second_bot_card2
+        second_bot_card2_score = second_bot_card2
         break
 
     elif second_bot_choice2 == 0:
-        b2 = 0
+        second_bot_card2_score = 0
         break
 
-user_score = (a + b)  # score for second round
-first_bot_score = (a1 + b1)
-second_bot_score = (a2 + b2)
+user_score = (first_card_score + second_card_score)  # score for second round
+first_bot_score = (first_bot_card1_score + first_bot_card2_score)
+second_bot_score = (second_bot_card1_score + second_bot_card2_score)
 
 print('your score is', user_score)
 print('Do you want pick last card? ')  # third round
@@ -123,9 +125,9 @@ while True:
         c2 = 0
         break
 
-user_score = (a + b + c)  # all game score
-first_bot_score = (a1 + b1 + c1)
-second_bot_score = (a2 + b2 + c2)
+user_score = (first_card_score + second_card_score + c)  # all game score
+first_bot_score = (first_bot_card1_score + b1 + c1)
+second_bot_score = (second_bot_card1_score + b2 + c2)
     
 print('your score is', user_score)
 print('first bot score is', first_bot_score)

@@ -68,7 +68,7 @@ punctuation_list = ['.', ',', ';', ':', '!', '?', '/', '"', '“', '”', '\n']
 
 not_analyzed_words = ['a', 'an', 'to', 'is', 'are', 'was', 'were', 'will', 'would', 'could', 'and', 'or', 'if', 'he',
                       'she', 'it', 'this', 'my', 'do', 'don’t', 'didn’t', 'wasn’t', 'weren’t', 'won’t', 'does',
-                      'did', 'the', 'of', 'on', 'we’re', 'for', 'but', 'it’s', 'in', 'they', 'into']
+                      'did', 'the', 'of', 'on', 'we’re', 'for', 'but', 'it’s', 'in', 'they', 'into', 'is']
 
 default_text = '''
 Amy normally hated Monday mornings, but this year was different. Kamal was in her art class and she liked Kamal. She 

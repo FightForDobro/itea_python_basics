@@ -12,12 +12,3 @@ while True:
         print("Odd number is", new_list2[0])
 
         break
-
-
-
-
-
-
-
-
-

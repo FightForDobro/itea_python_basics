@@ -16,4 +16,3 @@ for i in list_one:
     new_str += i
 
 print(new_str)
-

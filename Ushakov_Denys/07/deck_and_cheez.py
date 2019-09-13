@@ -1,15 +1,3 @@
-# TODO Починить Invalid letter в dict
-# TODO Добавить атаку после атаки
-# TODO Добавить дамку
-# TODO Очистить код
-# TODO Добавить бота
-# TODO Испарвить аттаку чтобы не делалло мув если не атака
-# TODO Про дебажить Calculate moves
-# TODO Rules and main menu
-# TODO Сделать бота умнее
-# TODO Починичть чтобы бот не ходил посе ошбки игрока
-
-
 class Deck:
 
     BLACK_PIECE = '○'

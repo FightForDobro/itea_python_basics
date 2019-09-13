@@ -1,14 +1,4 @@
 
-*.xml
 *.iml
-Ushakov_Denys/.DS_Store
-Ushakov_Denys/05/__pycache__/task01.cpython-37.pyc
-Ushakov_Denys/05/test.py
-Ushakov_Denys/05/test.txt
-Ushakov_Denys/06/__pycache__/characters.cpython-37.pyc
-Ushakov_Denys/06/__pycache__/game_loop.cpython-37.pyc
-Ushakov_Denys/06/__pycache__/enemies.cpython-37.pyc
-Ushakov_Denys/07/__pycache__/bot.cpython-37.pyc
-Ushakov_Denys/07/__pycache__/deck_and_cheez.cpython-37.pyc
-Ushakov_Denys/07/test.py
+*.xml
 .DS_Store

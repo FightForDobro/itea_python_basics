@@ -268,6 +268,9 @@ class Deck:
 
         move_coordinates = tuple(coordinate)
 
+        self.calculate_possible_moves()
+        self.check_win()
+
         if self.is_queen(cur_check) or cur_check in self.queen_list:
 
             print('You choose a Queen')
@@ -280,8 +283,6 @@ class Deck:
                 return True
 
             return False
-
-        self.calculate_possible_moves()
 
         moves = self.calculate_possible_move_for_check(move_coordinates, cur_check)
 
@@ -576,6 +577,18 @@ class Deck:
 
         if usr_inp == 'R':
             return True
+
+    def check_win(self):
+
+        if len(self.w_checker) == 0:
+
+            print('White win')
+            exit('Game Over')
+
+        elif len(self.b_checker) == 0:
+
+            print('Black win')
+            exit('Game Over')
 
 
 class CurrentChecker:
